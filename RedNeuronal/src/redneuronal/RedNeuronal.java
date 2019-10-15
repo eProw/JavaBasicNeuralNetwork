@@ -13,8 +13,10 @@ public class RedNeuronal {
         Perceptron p = new Perceptron(neuronLayers,inputs);
         
         float[] outputs = p.Calculate();
+		int i = 1;
         for(float f : outputs){
-            System.out.println(f);
+            System.out.println("Result " + i + ": " +f);
+			i++;
         }
         
         
